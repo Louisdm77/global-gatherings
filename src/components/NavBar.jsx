@@ -22,7 +22,7 @@ const NavBar = () => {
   };
 
   return (
-    <div className="flex justify-between items-center px-20 py-2 bg-white shadow-md">
+    <div className="flex justify-between items-center px-4 md:px-20 py-2 bg-white shadow-md">
       {/* Logo Section */}
       <div className="flex items-center">
         <h1 className="text-xl font-bold">Global Gatherings </h1>
@@ -47,7 +47,7 @@ const NavBar = () => {
       </div>
 
       {/* Mobile Navigation Toggle */}
-      <div className="lg:hidden">
+      <div className="lg:hidden ">
         <div className="bg-purple-500">
           <div
             onClick={handleNavClick}
