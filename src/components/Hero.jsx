@@ -1,7 +1,7 @@
 import React from "react";
 const Hero = () => {
   return (
-    <div className="flex flex-col items-center text-center px-4 py-16 bg-white z-1 relative">
+    <div className="flex flex-col items-center text-center px-4 py-16 bg-white  z-1 relative">
       <h3 className="text-md font-extrabold uppercase text-indigo-900">
         Find the World with Global Gatherings
       </h3>

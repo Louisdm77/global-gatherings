@@ -9,7 +9,7 @@ const Posts = () => {
       excerpt:
         "Experience the breathtaking views of Santorini with its white-washed buildings and stunning sunsets. Join our guided tours to explore hidden gems and indulge in local cuisine.",
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvtoYb34_H0l6Przl77okeMouM-5l2s9ssyw&s",
+        "https://i.pinimg.com/736x/7c/28/ea/7c28eaf433cee4728de91f55122a5fe5.jpg",
       link: "/post/santorini",
     },
     {
@@ -18,7 +18,7 @@ const Posts = () => {
       excerpt:
         "Embark on an unforgettable journey through the Amazon Rainforest. Encounter exotic wildlife, navigate winding rivers, and immerse yourself in the heart of nature.",
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe5TJ8cHEic7nblLDNHKVPYs_W5Bs1mvKmIw&s",
+        "https://i.pinimg.com/736x/16/a0/3e/16a03e5bcb3f84aa92d709f850ec5039.jpg",
       link: "/post/amazon",
     },
     {
@@ -27,7 +27,7 @@ const Posts = () => {
       excerpt:
         "Dive into the rich culture of Kyoto with our curated experiences. Visit ancient temples, participate in tea ceremonies, and stroll through serene bamboo forests.",
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxNMjaDeCnmjv7aoCiFrfU6LSleXFR9UdUPw&s",
+        "https://i.pinimg.com/736x/28/5a/8f/285a8f1a5c17aabef1261e537dc9bf4e.jpg",
       link: "/post/kyoto",
     },
   ];
@@ -59,11 +59,11 @@ const Posts = () => {
                 {article.title}
               </h4>
               <p className="text-gray-600 mt-2 text-sm">{article.excerpt}</p>
-              {/* <Link to={article.link}> */}
+              <Link to={article.link}>
               <button className="mt-4 text-indigo-800 font-bold hover:text-purple-600 transition">
                 Learn More
               </button>
-              {/* </Link> */}
+              </Link>
             </div>
           </div>
         ))}
