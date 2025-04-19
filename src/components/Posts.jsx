@@ -33,7 +33,7 @@ const Posts = () => {
   ];
 
   return (
-    <div className="relative z-20 bg-white py-8 px-4">
+    <div className="relative border border-5 z-20 bg-white py-8 px-4">
       <div className="text-start mb-8">
         <h3 className="text-xl font-bold text-indigo-900">
           Explore Our Diverse Travel Offerings and Create Unforgettable Memories
@@ -60,8 +60,8 @@ const Posts = () => {
               </h4>
               <p className="text-gray-600 mt-2 text-sm">{article.excerpt}</p>
               <Link to={article.link}>
-              <button className="mt-4 text-indigo-800 font-bold hover:text-purple-600 transition">
-                Learn More
+              <button className="mt-4 border p-2 rounded-xl hover:bg-indigo-500 hover:text-white text-indigo-800 font-bold hover:text-purple-600 transition">
+                Learn More →
               </button>
               </Link>
             </div>

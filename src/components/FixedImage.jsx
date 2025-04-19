@@ -1,7 +1,7 @@
 import React from "react";
 const FixedImage = () => {
   return (
-    <div className="relative h-[50vh] lg:h-[80vh] w-full ">
+    <div className="relative h-[50vh]  lg:h-[80vh] w-full ">
       <div className="fixed top-20 md:top-20  left-0 w-full h-[74%] lg:h-[80vh] z-0">
         <img
           className="w-full h-full object-cover"

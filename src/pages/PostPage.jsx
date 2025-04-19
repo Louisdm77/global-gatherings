@@ -129,7 +129,7 @@ const PostPage = () => {
         </div>
 
         {/* Navigation Buttons */}
-        <div className="flex justify-between mt-8">
+        <div className="flex justify-between gap-6 mt-8">
           {prevArticle ? (
             <Link to={`/post/${prevArticle.slug}`}>
               <button className="text-indigo-800 font-bold hover:text-purple-600 transition">
