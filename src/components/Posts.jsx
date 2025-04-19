@@ -33,7 +33,7 @@ const Posts = () => {
   ];
 
   return (
-    <div className="relative border border-5 z-20 bg-white py-8 px-4">
+    <div className="relative z-20 bg-white py-8 px-4">
       <div className="text-start mb-8">
         <h3 className="text-xl font-bold text-indigo-900">
           Explore Our Diverse Travel Offerings and Create Unforgettable Memories

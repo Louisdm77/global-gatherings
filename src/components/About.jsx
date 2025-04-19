@@ -4,9 +4,7 @@ import { Link } from "react-router-dom";
 const About = () => {
   return (
     <div className="py-16 px-4  bg-white relative">
-     
       <div className="max-w-5xl mx-4 md:mx-20 grid grid-cols-1 md:grid-cols-2 gap-14 items-center">
-   
         <div className="w-full h-80 lg:h-120">
           <img
             src="https://websitedemos.net/galatic-02/wp-content/uploads/sites/1455/2024/03/about-us.jpg"
@@ -15,7 +13,6 @@ const About = () => {
           />
         </div>
 
-      
         <div className="flex flex-col justify-center">
           <h3 className="text-2xl font-bold text-indigo-900 mb-4">
             Crafting Unforgettable Journeys with Global Gatherings
@@ -49,15 +46,13 @@ const About = () => {
             Expertly curated travel itineraries that immerse you in local
             cultures and traditions.
           </p>
-          
+
           <div className="hidden md:block absolute top-0 right-0 h-full w-px bg-gray-300"></div>
         </div>
 
-       
         <div className="text-center relative">
-          
           <div className="text-4xl font-bold text-indigo-900 mb-4">02</div>
-        
+
           <p className="text-gray-600">
             Access to hidden gems and off-the-beaten-path destinations for a
             unique experience.
@@ -66,11 +61,9 @@ const About = () => {
           <div className="hidden md:block absolute top-0 right-0 h-full w-px bg-gray-300"></div>
         </div>
 
-        
         <div className="text-center">
-        
           <div className="text-4xl font-bold text-indigo-900 mb-4">03</div>
-          
+
           <p className="text-gray-600">
             Personalized support from our travel experts to ensure a seamless
             journey.
