@@ -137,7 +137,7 @@ const PostPage = () => {
               </button>
             </Link>
           ) : (
-            <div></div> // Empty div to maintain flex layout
+            <div></div> 
           )}
           {nextArticle ? (
             <Link to={`/post/${nextArticle.slug}`}>
