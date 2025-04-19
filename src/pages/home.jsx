@@ -3,6 +3,7 @@ import NavBar from "../components/NavBar";
 import Hero  from "../components/Hero";
 import Posts from "../components/Posts";
 import FixedImage from "../components/FixedImage";
+import About from "../components/About";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Hero />
       <FixedImage />
       <Posts />
+      <About/>
     </div>
   );
 };

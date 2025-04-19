@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import Home from "./pages/Home";
 import PostPage from "./pages/PostPage";
+import AboutPage from "./pages/AboutPage";
 
 function App() {
   const location = useLocation();
@@ -14,6 +15,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/post/:slug" element={<PostPage />} />
+      <Route path="/about" element={<AboutPage />} />
     </Routes>
   );
 }
