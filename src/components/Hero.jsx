@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col items-center border border-5 text-center px-4 py-16 bg-white z-1 relative min-h-screen">
+    <div className="flex flex-col items-center  text-center px-4 py-16 bg-white z-1 relative min-h-screen">
       <h3 className="text-2xl font-extrabold uppercase text-indigo-900">
         Find the World with Global Gatherings
       </h3>
