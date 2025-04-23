@@ -14,8 +14,8 @@ const AboutHeading = () => {
         </p>
       </div>
 
-      {/* 3-Step Process */}
-      <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+    
+      <div className="max-w-5xl mx-auto  hidden md:grid md:grid-cols-3 gap-8 mb-12">
         {/* Step 1 */}
         <div className="text-center relative">
           <div className="text-4xl font-bold text-indigo-900 mb-4">01</div>
