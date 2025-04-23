@@ -4,6 +4,8 @@ import Home from "./pages/home";
 import PostPage from "./pages/PostPage";
 import AboutPage from "./pages/AboutPage";
 import About from "./pages/About";
+import Offerings from "./pages/Offerings";
+import Contact from "./pages/Contact";
 
 function App() {
   const location = useLocation();
@@ -18,6 +20,8 @@ function App() {
       <Route path="/post/:slug" element={<PostPage />} />
       <Route path="/aboutus" element={<AboutPage />} />
       <Route path="/about" element={<About />} />
+      <Route path="/offerings" element={<Offerings />} />
+      <Route path="/contact" element={<Contact />} />
     </Routes>
   );
 }

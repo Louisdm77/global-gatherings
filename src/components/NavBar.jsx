@@ -8,6 +8,7 @@ const NavBar = () => {
 
   const nav = [
     { name: "Home", link: "/" },
+    {name:'Timeline',link:'/timeline'},
     { name: "About", link: "/about" },
     { name: "Offerings", link: "/offerings" },
     { name: "Contact", link: "/contact" },
@@ -23,13 +24,13 @@ const NavBar = () => {
   };
 
   return (
-    <div className="flex justify-between items-center px-4 md:px-10 py-2 bg-white shadow-md">
+    <div className="flex justify-between items-center px-4 md:px-10 py-2 bg-white shadow-md fixed w-full z-100">
       <div className="flex items-center">
         <h1 className="text-xl font-bold">Global Gatherings </h1>
       </div>
 
       <div className="hidden lg:flex flex-grow justify-center text-lg">
-        <ul className="flex space-x-4 font-bold">
+        <ul className="flex space-x-4 font-base">
           {nav.map((item, index) => (
             <Link to={item.link}>
               <li

@@ -137,7 +137,7 @@ const PostPage = () => {
               </button>
             </Link>
           ) : (
-            <div></div> 
+            <div></div>
           )}
           {nextArticle ? (
             <Link to={`/post/${nextArticle.slug}`}>
