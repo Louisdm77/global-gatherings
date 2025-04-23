@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div className="py-16 px-4  bg-white relative">
       <div className="max-w-5xl mx-4 md:mx-20 grid grid-cols-1 md:grid-cols-2 gap-14 items-center">
-        <div className="w-full h-80 lg:h-120">
+        <div className="w-full h-80 md:h-full lg:h-120">
           <img
             src="https://websitedemos.net/galatic-02/wp-content/uploads/sites/1455/2024/03/about-us.jpg"
             alt="Global Gatherings Team"
@@ -29,7 +29,7 @@ const About = () => {
             Amazon. Our expert guides and personalized itineraries make every
             journey seamless and unforgettable.
           </p>
-          <Link to="/about">
+          <Link to="/aboutus">
             <button className="text-indigo-800 font-bold hover:text-purple-600 transition">
               Discover Our Story →
             </button>

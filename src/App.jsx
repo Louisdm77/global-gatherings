@@ -3,7 +3,7 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import Home from "./pages/home";
 import PostPage from "./pages/PostPage";
 import AboutPage from "./pages/AboutPage";
-
+import About from "./pages/About";
 
 function App() {
   const location = useLocation();
@@ -16,7 +16,8 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/post/:slug" element={<PostPage />} />
-      <Route path="/about" element={<AboutPage />} />
+      <Route path="/aboutus" element={<AboutPage />} />
+      <Route path="/about" element={<About />} />
     </Routes>
   );
 }

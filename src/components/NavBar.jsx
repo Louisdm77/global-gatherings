@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FiAlignJustify, FiX } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const [openNav, setOpenNav] = useState(false);
@@ -23,18 +24,24 @@ const NavBar = () => {
 
   return (
     <div className="flex justify-between items-center px-4 md:px-10 py-2 bg-white shadow-md">
-      
       <div className="flex items-center">
         <h1 className="text-xl font-bold">Global Gatherings </h1>
       </div>
 
-    
       <div className="hidden lg:flex flex-grow justify-center text-lg">
         <ul className="flex space-x-4 font-bold">
           {nav.map((item, index) => (
-            <li key={index}  onClick={() => handleItemClick(item.name)} className={`cursor-pointer text-black hover:text-purple-500 ${page === item.name ? 'font-bold' : ''}`}>
-              {item.name}
-            </li>
+            <Link to={item.link}>
+              <li
+                key={index}
+                onClick={() => handleItemClick(item.name)}
+                className={`cursor-pointer text-black hover:text-purple-500 ${
+                  page === item.name ? "font-bold" : ""
+                }`}
+              >
+                {item.name}
+              </li>
+            </Link>
           ))}
         </ul>
       </div>
@@ -51,13 +58,17 @@ const NavBar = () => {
         <div className="bg-purple-500">
           <div
             onClick={handleNavClick}
-            className={`rounded-lg p-2 text-xl cursor-pointer text-white ${openNav ? "hidden" : "block"}`}
+            className={`rounded-lg p-2 text-xl cursor-pointer text-white ${
+              openNav ? "hidden" : "block"
+            }`}
           >
             <FiAlignJustify />
           </div>
           <div
             onClick={handleNavClick}
-            className={`rounded-lg p-2 text-xl cursor-pointer text-white ${!openNav ? "hidden" : "block"}`}
+            className={`rounded-lg p-2 text-xl cursor-pointer text-white ${
+              !openNav ? "hidden" : "block"
+            }`}
           >
             <FiX />
           </div>
@@ -69,13 +80,17 @@ const NavBar = () => {
         <div className="absolute top-12 left-0 w-full bg-white shadow-md z-10">
           <ul>
             {nav.map((item, index) => (
-              <li
-                key={index}
-                onClick={() => handleItemClick(item.name)}
-                className={`p-2 border-b border-gray-300 w-full block text-black hover:bg-gray-200 ${page === item.name ? 'text-purple-500' : ''}`}
-              >
-                {item.name}
-              </li>
+              <Link to={item.link}>
+                <li
+                  key={index}
+                  onClick={() => handleItemClick(item.name)}
+                  className={`p-2 border-b border-gray-300 w-full block text-black hover:bg-gray-200 ${
+                    page === item.name ? "text-purple-500" : ""
+                  }`}
+                >
+                  {item.name}
+                </li>
+              </Link>
             ))}
           </ul>
         </div>

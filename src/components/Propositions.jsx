@@ -45,7 +45,7 @@ const Propositions = () => {
             </p>
           </div>
         </div>
-        <div className="w-full h-80 lg:h-screen">
+        <div className="w-full h-80 md:h-full lg:h-screen">
           <img
             src="https://websitedemos.net/galatic-02/wp-content/uploads/sites/1455/2024/03/why-choose-us.jpg"
             alt="Global Gatherings Experience"
